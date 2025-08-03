@@ -1,4 +1,4 @@
-# NOVA - Personalized Customer Support Chatbot for STAR Systems Pvt. Ltd.
+# NOVA – Personalized AI-Powered Customer Support Chatbot
 
 ## 🚨 Problem Statement:
 
@@ -8,17 +8,16 @@ Conventional customer support chatbots often suffer from fragmented functionalit
 
 ## 🔍 Project Overview:
 
-NOVA is a personalized, AI-powered customer support chatbot developed for STAR Systems India Pvt. Ltd. It delivers a **single intelligent chat interface** that dynamically adapts to user intent and context, eliminating the inefficiencies and limitations of traditional chatbots. Whether it's answering FAQs, scheduling appointments, or escalating issues, NOVA intelligently identifies user needs and seamlessly switches between tasks without explicit user commands.
+NOVA is an AI-powered, personalized customer support chatbot designed to deliver a unified, intelligent interface that understands user intent, retains context, and dynamically adapts to switch between tasks — such as handling FAQs, complaints, or appointment scheduling — without requiring explicit user commands.
 
 ---
 
-## 💡 Motivation:
+## 💡 Key Objectives
 
-With STAR Systems offering diverse services and products, addressing support queries quickly and efficiently becomes crucial. Manual handling leads to delays and inconsistent experiences. NOVA aims to:
-- Automate customer service tasks intelligently.
-- Provide real-time, accurate, and context-aware support.
-- Minimize the workload on human agents by reducing unnecessary escalations.
-- Enable seamless task-switching within a unified interface.
+- Automate customer support tasks with context-aware, real-time assistance
+- Minimize human agent workload via smart escalation
+- Enable dynamic task switching inside a single unified conversation flow
+- Improve response accuracy with retrieval-augmented generation (RAG)
 
 ---
 
