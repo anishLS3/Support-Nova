@@ -110,21 +110,17 @@ npm start
 ### 5. **Install Frontend Dependencies & Start**
 Create a .env file in the root directory and populate it with the  environment variables
 
-##  Architecture Flowchart
+## 🧭 Architecture Flowchart
 
-![Architecture Diagram](images\RagPipeLine.jpeg)
+![Architecture Diagram](https://github.com/anishLS3/Support-Nova/blob/main/images/RagPipeLine.jpeg?raw=true)
 
-##  Agent Workflow
+## 🧠 Agent Workflow
 
-![Agent Workflow](images\Agent_WorkFlow.jpeg)
+![Agent Workflow](https://github.com/anishLS3/Support-Nova/blob/main/images/Agent_WorkFlow.jpeg?raw=true)
 
-##  Frontend Output Screenshots
+## 🖥️ Frontend Output Screenshots
 
-![Home Page](images\HomePage.jpeg)
-
-![Chat Page](images\ChatPage.jpeg)
-
-![Chat Page 1](images\Chat.png)
+![Home Page](https://github.com/anishLS3/Support-Nova/blob/main/images/HomePage.jpeg?raw=true)
 
 ##  Future Improvements
 
