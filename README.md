@@ -112,19 +112,19 @@ Create a .env file in the root directory and populate it with the  environment v
 
 ##  Architecture Flowchart
 
-![Architecture Diagram](https://gitlab.digilabs.ai/Project-X-Hackathon-2025/Project-X-Hackathon-2025-Level-2/Shaurya/-/blob/main/images/RagPipeLine.jpeg?ref_type=heads)
+![Architecture Diagram](images\RagPipeLine.jpeg)
 
 ##  Agent Workflow
 
-![Agent Workflow](https://gitlab.digilabs.ai/Project-X-Hackathon-2025/Project-X-Hackathon-2025-Level-2/Shaurya/-/blob/main/images/Agent_WorkFlow.jpeg?ref_type=heads)
+![Agent Workflow](images\Agent_WorkFlow.jpeg)
 
 ##  Frontend Output Screenshots
 
-![Home Page](https://gitlab.digilabs.ai/Project-X-Hackathon-2025/Project-X-Hackathon-2025-Level-2/Shaurya/-/blob/main/images/HomePage.jpeg?ref_type=heads)
+![Home Page](images\HomePage.jpeg)
 
-![Chat Page](https://gitlab.digilabs.ai/Project-X-Hackathon-2025/Project-X-Hackathon-2025-Level-2/Shaurya/-/blob/main/images/ChatPage.jpeg?ref_type=heads)
+![Chat Page](images\ChatPage.jpeg)
 
-![Chat Page 1](https://gitlab.digilabs.ai/Project-X-Hackathon-2025/Project-X-Hackathon-2025-Level-2/Shaurya/-/blob/main/images/Chat.png?ref_type=heads)
+![Chat Page 1](images\Chat.png)
 
 ##  Future Improvements
 
