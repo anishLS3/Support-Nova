@@ -1,0 +1,181 @@
+/* Full-screen gradient background */
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 5vw;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black, #3b0078);
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.header-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-section p {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.button-group {
+    margin-top: 20px;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(to right, #007bff, #8a2be2);
+    color: white;
+    margin-right: 10px;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 2px solid #8a2be2;
+    color: white;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    opacity: 0.8;
+}
+
+/* Full-Width Stacked Cards */
+.full-width-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Alternate card layout */
+.full-width-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image Styling */
+.card-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text Section */
+.card-content {
+    color: white;
+    max-width: 600px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.card-content p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* Hover Effect */
+.full-width-card:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .full-width-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .full-width-card.reverse {
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Footer styling remains unchanged */
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer .social-icons {
+    margin-bottom: 20px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    padding: 10px;
+}
+
+.footer .social-icons a:hover {
+    color: #8a2be2;
+    transform: scale(1.2);
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.footer-links a:hover {
+    color: #8a2be2;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}

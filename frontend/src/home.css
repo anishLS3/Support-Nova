@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --text-color: #edf3ff;
+  --subheading-color: #97a7ca;
+  --placeholder-color: #c3cdde;
+  --primary-color: #000000; 
+  --secondary-color: #283045;
+  --secondary-hover-color: #333e58;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #1CAED7, #4E00C2);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(28, 174, 215, 0.8);
+}
+
+
+body {
+  color: var(--text-color);
+  background: var(--primary-color);
+  overflow-y: auto; 
+}
+
+/* 🔹 Fullscreen Container */
+.robot-fullpage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: black; /* Optional: Set background */
+}
+
+/* 🔹 Robot Model */
+.robot-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  z-index: 1;
+  transform: translateX(250px);
+}
+
+/* 🔹 Overlay Text - Aligned Left */
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: left; /* Align text to the left */
+  z-index: 2; /* Ensure text appears above the model */
+  max-width: 40%;
+}
+
+.overlay-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #1d7efd, #8f6fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.overlay-text p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--subheading-color);
+}
+
+/* 🔹 Semi-transparent Background for Text Readability */
+.overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text visibility */
+  z-index: 1;
+}
+
+/* 🔹 Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .overlay-text {
+    left: 10%; /* Adjust text position for smaller screens */
+    max-width: 60%;
+  }
+
+  .overlay-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-text p {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,12 @@
+Question,Answer
+"Why is the cloud IT support response slow during a critical issue?","Delays may be due to unclear escalation paths. Use a smart escalation matrix and define priority-based routing to resolve this."
+"Why is there confusion about cloud support responsibilities?","Users may not know what falls under the cloud provider vs the MSP. Provide a knowledge base that clearly outlines responsibilities."
+"What issues occur during app migration to the cloud?","Common issues include downtime, data loss, and missing dependencies. Use blue-green deployment and pre-migration checks to prevent this."
+"Why do users face alert fatigue in cloud managed services?","Overuse of static thresholds can cause false alerts. Switch to dynamic thresholding and use approval workflows for automation."
+"Why is cloud monitoring data hard to interpret?","Too many dashboards or delayed logs make monitoring difficult. Use customizable dashboards and real-time log streaming for clarity."
+"What can cause delays in 24x7 managed services?","Delays can result from poor scheduling or lack of automated remediation. Use auto-remediation scripts and a holiday escalation plan."
+"What are challenges in hybrid and multi-cloud management?","Governance complexity and visibility issues are common. Use policy-as-code tools and unified dashboard platforms to manage effectively."
+"What issues occur in cloud architecture design?","Over-engineering and poor pattern choices can increase costs. Use architecture review templates and threat modeling in early stages."
+"What are issues during platform modernization?","Dependency issues and user resistance can arise. Run parallel systems and provide training to ease the transition."
+"Why do users get unexpected high cloud bills?","Idle or misconfigured resources lead to high bills. Detect idle instances and use pricing calculators to optimize costs."
+"What causes delays in cloud implementation?","Delays occur from unclear expectations and lack of resources. Align stakeholders early and use standardized implementation blueprints."

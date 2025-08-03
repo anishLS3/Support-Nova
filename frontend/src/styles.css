@@ -1,0 +1,429 @@
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* Dark theme colors */
+  --text-color: #edf3ff;
+  --subheading-color: #97a7ca;
+  --placeholder-color: #c3cdde;
+  --primary-color: #000000; /* Updated to ensure uniform background */
+  --secondary-color: #283045;
+  --secondary-hover-color: #333e58;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--primary-color);
+}
+
+.container {
+  padding: 32px 60px;
+  background: var(--primary-color); /* Ensuring uniform background */
+}
+
+.chat-container,
+.chat-messages,
+.prompt-container,
+.suggestions {
+  background: var(--primary-color) !important; /* Apply uniform background */
+}
+
+/* Ensuring chat messages match the page background */
+.chat-messages {
+  background: var(--primary-color);
+}
+
+.chat-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.chat-messages {
+  width: 100%;
+  max-width: 1100px; /* Restrict width to 1100px */
+  margin: 20px auto; /* Centers the container with 20px top/bottom margin */
+  padding: 15px;
+  border-radius: 10px;
+  
+  height: 500px; /* Fixed height to ensure scrolling */
+  overflow-y: auto; /* Enables vertical scrolling */
+  
+  display: flex;
+  flex-direction: column; /* Messages stack vertically */
+  gap: 10px; /* Adds spacing between messages */
+  
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.prompt-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures space between left and right sections */
+  width: 100%;
+  background-color: #2c2f3f;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.prompt-wrapper {
+  width: 100%;
+  max-width: 980px; /* Ensures the width is consistent with chat-messages */
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .chat-messages,
+  .prompt-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.container :where(.app-header, .suggestions, .prompt-wrapper) {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 980px;
+}
+
+.container .app-header {
+  margin-top: 4vh;
+}
+
+.app-header .heading {
+  font-size: 3rem;
+  width: fit-content;
+  background: linear-gradient(to right, #006eff, #6047bb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app-header .sub-heading {
+  font-size: 2.6rem;
+  margin-top: -5px;
+  color: var(--subheading-color);
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.right-icons {
+  display: flex;
+  gap: 10px; /* Space between send and voice buttons */
+  margin-left: auto; /* Pushes it to the right */
+}
+
+
+
+.icon-button svg {
+  fill: var(--placeholder-color); /* Added fill property to target SVG */
+}
+/* Suggestions list stylings */
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.suggestions-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.suggestions-item:hover {
+  background: var(--secondary-hover-color);
+  transform: translateY(-2px);
+}
+
+.suggestions-item .text {
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.suggestions-item .icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #1d7efd;
+  transition: transform 0.2s ease;
+}
+
+.suggestions-item:hover .icon {
+  transform: scale(1.1);
+}
+
+/* Hide suggestions when user starts typing */
+.hidden {
+  display: none;
+}
+
+/* Prompt container stylings */
+.prompt-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.prompt-container :where(.prompt-wrapper, .prompt-form, .prompt-actions) {
+  display: flex;
+  gap: 12px;
+  height: 56px;
+  align-items: center;
+}
+
+.prompt-wrapper .prompt-form {
+  width: 100%;
+  height: 100%;
+  border-radius: 130px;
+  background: var(--secondary-color);
+}
+
+.prompt-form .prompt-input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding-left: 24px;
+  color: var(--text-color);
+}
+
+.prompt-form .prompt-input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.prompt-wrapper button {
+  width: 56px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  color: var(--text-color);
+  background: var(--secondary-color);
+  transition: 0.3s ease;
+}
+
+.followup-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.followup-title {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.followup-carousel {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #8f6fff transparent;
+  padding-bottom: 5px;
+}
+
+/* Webkit Scrollbar (Chrome, Edge, Safari) */
+.followup-carousel::-webkit-scrollbar {
+  height: 6px; /* Adjust height of the scrollbar */
+}
+
+.followup-carousel::-webkit-scrollbar-thumb {
+  background: #8f6fff;
+  border-radius: 10px;
+}
+
+.followup-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.followup-questions {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap; /* Ensure the items stay in a row */
+}
+
+.followup-question {
+  background: linear-gradient(to right, #006eff, #6047bb);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.followup-question:hover {
+  transform: scale(1.1);
+}
+
+.prompt-wrapper button:hover {
+  background: var(--secondary-hover-color);
+}
+
+.prompt-form .prompt-actions {
+  gap: 5px;
+  margin-right: 7px;
+}
+
+.prompt-form .prompt-actions button {
+  height: 45px;
+  width: 45px;
+}
+
+.prompt-form #send-prompt-btn {
+  color: #fff;
+  background: linear-gradient(to right, #006eff, #6047bb);
+}
+
+.prompt-form .prompt-input:valid ~ .prompt-actions #send-prompt-btn {
+  display: block;
+}
+
+.prompt-form #send-prompt-btn:hover {
+  background: #0264e3;
+}
+
+.prompt-form #voice-btn {
+  color: #fff;
+  background: linear-gradient(to right, #006eff, #6047bb);
+}
+
+.prompt-form #voice-btn:hover {
+  background: #0264e3;
+}
+
+.prompt-form #new-chat-btn {
+  color: #fff;
+  background: linear-gradient(to right, #006eff, #6047bb);
+}
+
+.prompt-form #new-chat-btn:hover {
+  background: #0264e3;
+}
+
+
+
+.user-msg {
+  align-self: flex-end;
+  background: linear-gradient(to right, #006eff, #6047bb);
+  color: white;
+  padding: 12px;
+  border-radius: 15px;
+  max-width: 70%;
+  text-align: right;
+}
+
+
+.bot-msg {
+  align-self: flex-start;
+  background-color: var(--secondary-color); /* Matches prompt and navbar */
+  color: var(--text-color);
+  padding: 12px;
+  border-radius: 15px;
+  max-width: 70%;
+  text-align: left;
+}
+
+
+.loading {
+  color: #97a7ca;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .chat-messages {
+    max-height: 60vh;
+    min-height: 150px;
+  }
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: hsl(107, 91%, 35%);
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #22223b;
+}
+
+.typing {
+  align-self: flex-start;
+}
+
+.chat-form {
+  display: flex;
+  margin-top: auto;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+}
+
+.chat-submit {
+  padding: 10px 20px;
+  background-color: yellowgreen;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer & Edge */
+}
